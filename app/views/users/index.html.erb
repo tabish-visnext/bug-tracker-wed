@@ -1,0 +1,33 @@
+<div class="container">
+
+
+
+<% if current_user.role == 'manager'%>
+   <% @m.each do |u|%>
+      <%= u.username%> <br>
+   <% end %>
+<% end %>
+
+<% if current_user.role == 'qa'%>
+   <% @q.each do |u|%>
+      <%= u.username%> <br>
+   <% end %>
+<% end %>
+
+<% if current_user.role == 'developer'%>
+   <% @d.each do |u|%>
+    
+      <%= u.username%> <br>
+   <% end %>
+<% end %>
+</div>
+
+<table class="table table-success table-striped">
+  <tr>
+     <th>name</th>
+  </tr>
+
+  <tr>
+     <td>jello</td>
+  </tr>
+</table>
